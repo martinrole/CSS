@@ -1,0 +1,177 @@
+body
+{
+  font-family: 'Dancing Script', cursive;
+}
+header
+{
+  background: #5b7989;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+a:visited
+{
+  text-decoration: none;
+}
+.banner
+{
+  margin-right: 15px;
+}
+.elemento
+{
+  border-radius: 5px;
+}
+.elemento:hover
+{
+  text-decoration: underline;
+}
+#contenedor
+{
+  background: #d5c75f;
+}
+.retrato1  {filter: blur(10px);}
+.retrato2, .retrato4, .retrato6 {filter: grayscale(100%);}
+.retrato3 {filter: sepia(90%);}
+
+footer
+{
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px; /* IDEA: Border con 4 valores que se aplica a cada esquina empezado por el lado izq superior */
+}
+footer img
+{
+  width: 30px;
+  height: 20px;
+
+}
+footer h2
+{
+  text-align: center;
+  line-height: 0;
+}
+
+
+
+
+@media (max-width: 900px)
+{
+  header
+  {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+  }
+  .banner
+  {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .titulo
+  {
+    text-align: center;
+    height: 70%;
+  }
+  .elemento
+  {
+    width: 15%;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+  }
+  section
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section div
+  {
+    width: 70%;
+    padding: 15px 0px 10px 0px;
+  }
+  section div img
+  {
+    width: 100%;
+    height: 250px;
+  }
+  footer
+  {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+  }
+
+}
+
+@media (min-width: 900px)
+{
+  header
+  {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titulo
+  {
+    padding-left: 20px;
+  }
+  .banner
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .elemento
+  {
+    margin: 10px;
+    padding: 15px;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+  }
+
+  section
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section div img
+  {
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+  }
+  footer
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

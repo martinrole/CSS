@@ -1,0 +1,205 @@
+body
+{
+  font-family: 'Dancing Script', cursive;
+}
+header
+{
+  background: #5b7989;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+}
+a
+{
+  text-decoration: none;
+  color: white;
+}
+a:visited
+{
+  text-decoration: none;
+}
+.banner
+{
+  margin-right: 15px;
+}
+.elemento
+{
+  border-radius: 5px;
+  font-size: 3vh;
+}
+.elemento:hover
+{
+  text-decoration: underline;
+}
+.Principal
+{
+  background: #82c3a6;
+}
+.Secundaria
+{
+  background: #d5c75f;
+}
+figure
+{
+  font-size: 3vh;
+  justify-content: center;
+  transition: 2s All;
+}
+figcaption
+{
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+#imagen1:hover
+{
+  transform: rotateZ(10deg);
+  border: #82c3a6 solid 2px;
+}
+#imagen2:hover
+{
+  transform: translateY(-5px) translateX(20px);
+  border: #82c3a6 solid 2px;
+}
+
+
+footer
+{
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px; /* IDEA: Border con 4 valores que se aplica a cada esquina empezado por el lado izq superior */
+}
+footer img
+{
+  width: 30px;
+  height: 20px;
+
+}
+footer h2
+{
+  text-align: center;
+  line-height: 0;
+}
+
+
+
+
+@media (max-width: 900px)
+{
+  header
+  {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+  }
+  .banner
+  {
+    width: 100%;
+    height: 30%;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+  .titulo
+  {
+    text-align: center;
+    height: 70%;
+  }
+  .elemento
+  {
+    width: 15%;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+  }
+section div
+{
+  display: flex;
+  flex-direction: column;
+}
+img
+{
+  width: 100%;
+  height: 200px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+}
+
+
+@media (min-width: 900px)
+{
+  header
+  {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titulo
+  {
+    padding-left: 20px;
+  }
+  .banner
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .elemento
+  {
+    margin: 10px;
+    padding: 15px;
+
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    align-items: center;
+  }
+  section div
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .Principal
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .Principal figure img
+  {
+    width: 600px;
+    height: 400px;
+  }
+  .Secundaria figure img
+  {
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  footer
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
